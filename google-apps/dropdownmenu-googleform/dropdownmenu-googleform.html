@@ -152,7 +152,7 @@
         Berdasarkan hal itu maka saya mulai membuat Soal dengan Google Form, bahkan latihan siswa yang biasa dikirim via WA saya buatkan juga 
         dengan Google Form dengan fitur File Upload
         <div class="text-center"><p text-center><b>File Upload di Google Form</b></p></div>
-          <img src="file-upload.png" alt="File Upload di Google Form" class ="center-image" width="220" height="350"><br>
+          <img src="images\file-upload.png" alt="File Upload di Google Form" class ="center-image" width="220" height="350"><br>
         Sehingga semua tugas siswa terkumpul rapi di Drive, saya pun menjadi lebih mudah untuk mengkoreksinya dan tidak buru-buru cepat di hapus
         (jika di HP pasti akan cepat dihapus, agar memori HP tidak cepat penuh), selama kapasitas Drive saya masih mencukupi.<br><br>
         Setelah berhasil membuat soal dan mengumpulkan tugas dengan Google Form, saya mengalami masalah baru yaitu : <br><br>
@@ -168,54 +168,54 @@
         Setelah beberapa kali Google, saya menemukan blog yang saya cari <a href="http://wafflebytes.blogspot.com/2016/10/google-script-create-drop-down-list.html" target="_blank">disini</a> 
         (saya berterima kasih untuk yang punya blog itu &#128522;) setelah saya coba dan berhasil dah. Seperti ini :
         <div class="text-center"><p text-center><b>Dropdown Menu dengan Nama Siswa yang sudah disediakan</b></p></div>
-          <img src="dropdown-namasiswa.png" alt="Dropdown Nama Siswa" class ="center-image" width="600" height="650"><br>
+          <img src="images\dropdown-namasiswa.png" alt="Dropdown Nama Siswa" class ="center-image" width="600" height="650"><br>
         Sekarang baru masuk ke pembahasan utama dari tulisan ini, pembukaannya kepanjangan ya? hehe. <b>Dropdown nama-namanya itu tidak diketik
         manual ya.</b> Saya tinggal <i>copy-paste</i> dari daftar nama yang sudah ada. Kemudian saya mulai buat dropdown nama siswanya dah.
         Caranya sebagai berikut : <br><br>
         <ol type="1">
           <li>Pada Google Form klik Responses (gambar no 1), kemudian klik ikon Google Sheet (gambar no 2).<br><br>
-            <img src="responses-googlesheet.png" alt="Responses Google Sheet" class ="center-image" width="450" height="200"></li><br>
+            <img src="images\responses-googlesheet.png" alt="Responses Google Sheet" class ="center-image" width="450" height="200"></li><br>
             <li>Kemudian akan ada konfirmasi dialog, intinya akan membuat Google Sheet baru, jika belum pernah buat. Pilih Create ya</li>
             <li>Setelah itu akan membuka Tab baru di Browser, tab Google Sheet yang terhubung dengan Google Form, kemudian dibagian bawah
               Google Sheet klik Add Sheet (gambar no 3), kemudian beri nama sheet baru (gambar no 4). Contoh di saya, sheet baru saya beri nama :
               <b><i>Nama</i>, karena nama sheet ini yang akan dipanggil di <i>codingan/script</i> berikutnya</b>.<br><br>
-              <img src="add-sheet.png" alt="Add Sheet" class ="center-image" width="450" height="250"></li><br>
+              <img src="images\add-sheet.png" alt="Add Sheet" class ="center-image" width="450" height="250"></li><br>
             </li>
             <li>Kemudian pada Menu Google Sheet, klik <b>Tools</b> (gambar no 5) trus pilih <b>Script Editor</b> (gambar no 6).</li><br>
-            <img src="tools-scripteditor.png" alt="Tools Script Editor" class ="center-image" width="270" height="290"></li><br>
+            <img src="images\tools-scripteditor.png" alt="Tools Script Editor" class ="center-image" width="270" height="290"></li><br>
             <li>Setelah itu akan membuka Tab baru di Browser, yaitu tab Script Editor Google (gambar no 7).</li><br>
-            <img src="scripteditor.png" alt="Script Editor" class ="center-image" width="270" height="290"></li><br>
+            <img src="images\scripteditor.png" alt="Script Editor" class ="center-image" width="270" height="290"></li><br>
             <li>Kemudian <i>copy-paste</i> <i>codingan/script</i> di bawah ini.</li><br>
             <script src="https://gist.github.com/indrabsudirman/ed480412c5c39c77bd308b82f91af235.js"></script>
             Pada <i>codingan/script</i> di atas, kodingan yang diawali sama // itu tidak dibaca sama Mesin Script Google ya, itu hanya komentar
             untuk memudahkan programmer lain/orang lain membaca <i>codingan/script</i>. Bisa dibilang itu petunjuknya.
             <li>Hasilnya akan seperti ini (gambar no 8). Oh iya, file Scriptnya juga saya beri nama : <b>Nama</b> (gambar no 9).</li>
-            <img src="gambar-8-9.png" alt="Script Editor" class ="center-image" width="870" height="690"></li><br>
+            <img src="images\gambar-8-9.png" alt="Script Editor" class ="center-image" width="870" height="690"></li><br>
             <li><b>Sebelum ditest scriptnya, ada beberapa bagian script yang harus diganti. Ini step penting, jika salah, Dropdown menu Namanya 
               tidak akan tampil di Google Form.</b><br><br>
               Jika kamu membuat sama semua <i>codingan/script</i> seperti contoh saya. Hanya ada 2 bagian script yang harus diganti
               <b>di baris 3 dan 5</b>. Baris 3 diisi dengan Google Form ID kamu. Cara mendapatkan ID Google Form adalah dengan membuka Google Form 
               yang akan dihubungkan dengan Dropdown nama siswa. lihat gambar di bawah ini ya.<br><br>
-              <img src="id-google-form.png" alt="ID Google Form" class ="center-image" width="770" height="50"></li><br>
+              <img src="images\id-google-form.png" alt="ID Google Form" class ="center-image" width="770" height="50"></li><br>
               <b>Kamu copy-paste text setelah d/ sampai /edit</b> kemudian paste di baris 3 pada script. <br><br>
               kemudian untuk mengisi baris ke 5 dari script adalah mencari elemen ID Dropdown yang akan dihubungkan dengan nama siswa di Google Sheet.
               Caranya : Klik kanan di Google Form, kemudian pilih Inspect. Nanti akan tampil seperti gambar di bawah ini.<br><br>
-              <img src="inpect-element.png" alt="Inspect" class ="center-image" width="770" height="200"></li><br><br>
+              <img src="images\inpect-element.png" alt="Inspect" class ="center-image" width="770" height="200"></li><br><br>
               kemudian CTRL + F, ketik data-item (gambar no 10). Trus cari id Dropdown didekat text data-item. Petunjuknya adalah, jika kamu arahkan mouse ke inspect-element
               maka bagian atasnya akan berwarna biru. Nah tinggal pasin sama dropdown kamu. Kalo sudah sama-sama biru. ketik ID Dropdownnya (gambar no 11).
               Oh iya, ID Dropdown biasanya angka ya.<br><br>
-              <img src="data-item.png" alt="ID Google Form" class ="center-image" width="770" height="550"></li><br><br>
+              <img src="images\data-item.png" alt="ID Google Form" class ="center-image" width="770" height="550"></li><br><br>
               Setelah mendapatkan ID elemen Dropdownnya tinggal salin dah di script baris ke 5.
             </li>
             <li>Kemudian save trus run dah. Nanti akan ada permintaan akses dari Google harus diallow semua</li><br>
             seperti 4 gambar di bawah ini. <br><br>
-            <img src="review-permissions.png" alt="Review permissions" class ="center-image" width="700" height="300"></li><br><br>
+            <img src="images\review-permissions.png" alt="Review permissions" class ="center-image" width="700" height="300"></li><br><br>
             kemudian pilih ini :<br><br>
-            <img src="review-permissions-advanced.png" alt="Review permissions" class ="center-image" width="700" height="500"></li>
+            <img src="images\review-permissions-advanced.png" alt="Review permissions" class ="center-image" width="700" height="500"></li>
             kemudian ini :<br><br>
-            <img src="review-permissions-goto.png" alt="Review permissions" class ="center-image" width="700" height="500"></li><br><br>
+            <img src="images\review-permissions-goto.png" alt="Review permissions" class ="center-image" width="700" height="500"></li><br><br>
             sampai disini :
-            <img src="review-permissions-goto-allow.png" alt="Review permissions" class ="center-image" width="700" height="500"></li><br><br>
+            <img src="images\review-permissions-goto-allow.png" alt="Review permissions" class ="center-image" width="700" height="500"></li><br><br>
 
             <li><b>Setelah itu selesai dah, tinggal ulangi lagi di run <i>codingan/script</i> di Browser Google Script Editor</b></li><br>
         </ol><br>
