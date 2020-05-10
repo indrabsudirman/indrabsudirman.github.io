@@ -1,0 +1,205 @@
+<!--
+   index.html
+   
+   Copyright 2020 IndraSudirman
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" href="..\..\image\gl_bw_new.png" type="image/gif" sizes="20x25">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS Offline-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+
+    .jumbotron {
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom:0px;
+      }
+      .navbar {
+
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        .card {
+          flex-direction: column;
+
+        }
+
+
+        
+    .display-4 {
+      text-align:center;
+
+      }
+      .lead {
+        text-align:center;
+      }
+      .gray{
+        background-color: rgb(228, 228, 228);
+
+      }
+      code { 
+        color: #000000;
+      }
+      
+     
+      
+  </style>
+    
+
+    <title>This is just notes for me</title>
+  </head>
+  <body>
+    
+    <div class="container jumbotron">
+        
+                 
+  <h1 class="display-4">Indra Sudirman</h1>
+  <p class="lead">This is just notes for me.</p>
+  
+</div>
+<div>
+    <nav class="container navbar navbar-expand-lg navbar-light gray">
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="..\..\index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\..\java\java.html">Java </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\..\ubuntu\ubuntu.html">Ubuntu</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="..\..\mysql\mysql.html">MySQL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\..\google-apps\google-apps.html">Google Apps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="..\git.html">Git</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+</div>
+
+
+<div class="container card text-justify">
+  <div class="card-body">
+    <div id="date">	<time datetime="2020-05-10 00:50:00"><strong>Posted:</strong> Mei 10, 2020</time><br><br></div>
+    <div class="container">
+      <blockquote class="blockquote text-center">
+        <p class="h4">Query-query standar pada MySQL</p>
+        <footer class="blockquote-footer">IndraSudirman <cite title="Source Title"></cite></footer>
+      </blockquote>
+      Sebenarnya dalam melakukan operasi pada MySQL sudah bisa dilakukan dengan mudah dengan GUI (Graphical User Interface) yang ada di <a href="https://www.phpmyadmin.net/" target="_blank">phpMyAdmin</a>.
+      Tapi saya pribadi kayanya lebih seru kalau melakukan operasi MySQL melalui CLI (Command Line Interface) aja atau biasa orang bilang kalau di <code>Windows</code> itu 
+      melalui CMD sedangkan di <code>Linux</code> biasa disebut <i>Terminal</i>. Alasannya untuk melatih agar bagi pemula seperti saya dapat dengan mudah memahami, mengingat dan mampu dengan cepat mengusai fungsi dari <i>query</i> MySQL
+      itu sendiri. <br><br>
+      Langsung saja dimulai, oh iya saya jalankan dulu <a href="https://www.apachefriends.org/index.html" target="_blank"><i>Xampp</i></a> untuk dapat akses ke database.
+      setelah itu mulai buka CMD-nya <code>Windows</code>, saya melakukan dengan klik kanan di start trus pilih <code>Windows PowerShell</code>
+      <div class="text-center"><p text-center><b>Tampilan <code>Windows PowerShell</code></b></p>
+      <img src="images\windowsPowerShell.png" alt="windows PowerShell" class ="center-image" width="500" height="300"><br><br></div>
+      <ol type="1">
+        <li><i>Query</i> pertama adalah masuk ke MySQL dari <code>Windows PowerShell</code> dengan perintah :<br>
+        <code>mysql -uroot</code> dan <code>mysql -uroot -p</code><br>
+        <code>mysql -uroot</code> untuk langsung masuk ke MySQL yang masih standar, belum dibuat password untuk aksesnya. sedangkan <code>mysql -uroot -p</code> 
+        untuk masuk ke MySQL yang sudah diset password loginnya. Hasilnya seperti ini :
+        <div class="text-center"><p text-center><b>MySQL setelah berhasil login</b></p>
+          <img src="images\windowsPowerShellLogin.png" alt="windows PowerShell" class ="center-image" width="650" height="400"><br><br></div></li>
+        <li><i>Query</i> berikutnya yang biasa saya lakukan adalah mengecek isi database, dengan cara : <br>
+          <code>show databases;</code><br>
+          <code>show databases</code> berfungsi untuk menampilkan seluruh nama database, hasilnya akan seperti ini :
+          <div class="text-center"><p text-center><b>MySQL Show Database</b></p>
+          <img src="images\showdatabase.png" alt="Show Database" class ="center-image" width="650" height="400"><br><br></div></li> 
+      </ol>
+      
+      <br><br>       
+      Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+      Terima kasih banyak untuk petunjuknya, <a href="https://www.facebook.com/yohanes/" target="_blank">om Yohanes.</a><br><br>
+
+      Referensi : <br>
+      <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html</a><br>
+      <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield</a><br><br>
+      
+
+        
+
+
+    
+
+  </div>
+
+
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 
+    <a href="https://indrabsudirman.github.io/"> IndraSudirman</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS OFFLINE -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
