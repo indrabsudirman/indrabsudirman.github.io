@@ -135,21 +135,48 @@
       melalui CMD sedangkan di <code>Linux</code> biasa disebut <i>Terminal</i>. Alasannya untuk melatih agar bagi pemula seperti saya dapat dengan mudah memahami, mengingat dan mampu dengan cepat mengusai fungsi dari <i>query</i> MySQL
       itu sendiri. <br><br>
       Langsung saja dimulai, oh iya saya jalankan dulu <a href="https://www.apachefriends.org/index.html" target="_blank"><i>Xampp</i></a> untuk dapat akses ke database.
-      setelah itu mulai buka CMD-nya <code>Windows</code>, saya melakukan dengan klik kanan di start trus pilih <code>Windows PowerShell</code>
+      setelah itu mulai buka CMD-nya <code>Windows</code>, saya melakukan dengan klik kanan di start trus pilih <code>Windows PowerShell</code><br><br>
       <div class="text-center"><p text-center><b>Tampilan <code>Windows PowerShell</code></b></p>
       <img src="images\windowsPowerShell.png" alt="windows PowerShell" class ="center-image" width="500" height="300"><br><br></div>
       <ol type="1">
         <li><i>Query</i> pertama adalah masuk ke MySQL dari <code>Windows PowerShell</code> dengan perintah :<br>
         <code>mysql -uroot</code> dan <code>mysql -uroot -p</code><br>
         <code>mysql -uroot</code> untuk langsung masuk ke MySQL yang masih standar, belum dibuat password untuk aksesnya. sedangkan <code>mysql -uroot -p</code> 
-        untuk masuk ke MySQL yang sudah diset password loginnya. Hasilnya seperti ini :
+        untuk masuk ke MySQL yang sudah diset password loginnya. Hasilnya seperti ini :<br><br>
         <div class="text-center"><p text-center><b>MySQL setelah berhasil login</b></p>
           <img src="images\windowsPowerShellLogin.png" alt="windows PowerShell" class ="center-image" width="650" height="400"><br><br></div></li>
         <li><i>Query</i> berikutnya yang biasa saya lakukan adalah mengecek isi database, dengan cara : <br>
           <code>show databases;</code><br>
-          <code>show databases</code> berfungsi untuk menampilkan seluruh nama database, hasilnya akan seperti ini :
+          <code>show databases</code> berfungsi untuk menampilkan seluruh nama database, hasilnya akan seperti ini :<br><br>
           <div class="text-center"><p text-center><b>MySQL Show Database</b></p>
-          <img src="images\showdatabase.png" alt="Show Database" class ="center-image" width="650" height="400"><br><br></div></li> 
+          <img src="images\showdatabase.png" alt="Show Database" class ="center-image" width="650" height="400"><br><br></div></li>
+        <li><i>Query</i> berikutnya, jika ingin menggunakan database yang sudah ada, bisa menggunakan : <br>
+        <code>use siswa;</code><br>
+        <code>use siswa</code> digunakan karena saya ingin menggunakan database siswa seperti pada gambar berikut ini :<br><br>
+        <div class="text-center"><p text-center><b><i>Query</i> untuk menggunakan database yang sudah dibuat sebelumnya</b></p>
+          <img src="images\usedatabase.png" alt="Use Database" class ="center-image" width="650" height="500"><br><br></div>
+        Tapi jika ingin buat database baru, dengan <i>query</i> berikut ini : <br>
+        <code>create database guru;</code><br>
+        <code>create database guru</code> untuk membuat database baru dengan nama <b>guru</b>. Jika ingin nama <i>database</i> lain, tinggal diganti nama guru, sesuai keinginan.<br><br>
+        <div class="text-center"><p text-center><b><i>Query</i> untuk membuat database baru</b></p>
+          <img src="images\createdatabase.png" alt="Create Database" class ="center-image" width="600" height="150"><br><br></div>
+        Oh iya, <code>Query OK, 1 row affected</code> pada gambar di atas, itu berarti Query berhasil tidak error.<br>
+        </li><br>
+        <li><i>Query</i> berikutnya, adalah membuat tabel baru di database yang sudah dibuat. Sebagai contoh akan buat tabel dengan nama <b>gaji_guru</b>
+          kemudian ada <i>field</i>nya, seperti : <b>id, nama_lengkap, tempat_lahir, tgl_lahir, alamat, no_handphone</b> dan <b>tgl_dibuat</b>. Sehingga detail tabelnya seperti ini : <br><br>
+          <div class="text-center"><p text-center><b>Desain Tabel Gaji guru</b></p>
+            <img src="images\desaintable.png" alt="Desain Tabel" class ="center-image" width="650" height="350"><br><br></div>
+          <i>query</i>nya 
+          menjadi seperti ini : <br><br>
+          <code>CREATE TABLE gaji_guru (
+            id INT(10) AUTO_INCREMENT PRIMARY KEY,
+            nama_lengkap VARCHAR(100) NOT NULL,
+            tempat_lahir VARCHAR(100) NOT NULL,
+            tanggal_lahir DATE,
+            alamat VARCHAR(255),
+            no_handphone VARCHAR(100),
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)</code>
+        </li>
       </ol>
       
       <br><br>       
