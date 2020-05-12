@@ -140,23 +140,23 @@
       <img src="images\windowsPowerShell.png" alt="windows PowerShell" class ="center-image" width="500" height="300"><br><br></div>
       <ol type="1">
         <li><i>Query</i> pertama adalah masuk ke MySQL dari <code>Windows PowerShell</code> dengan perintah :<br>
-        <code>mysql -uroot</code> dan <code>mysql -uroot -p</code><br>
+        <code><mark>mysql -uroot</mark></code> dan <code><mark>mysql -uroot -p</mark></code><br>
         <code>mysql -uroot</code> untuk langsung masuk ke MySQL yang masih standar, belum dibuat password untuk aksesnya. sedangkan <code>mysql -uroot -p</code> 
         untuk masuk ke MySQL yang sudah diset password loginnya. Hasilnya seperti ini :<br><br>
         <div class="text-center"><p text-center><b>MySQL setelah berhasil login</b></p>
           <img src="images\windowsPowerShellLogin.png" alt="windows PowerShell" class ="center-image" width="650" height="400"><br><br></div></li>
         <li><i>Query</i> berikutnya yang biasa saya lakukan adalah mengecek isi database, dengan cara : <br>
-          <code>show databases;</code><br>
+          <code><mark>SHOW databases;</mark></code><br>
           <code>show databases</code> berfungsi untuk menampilkan seluruh nama database, hasilnya akan seperti ini :<br><br>
           <div class="text-center"><p text-center><b>MySQL Show Database</b></p>
           <img src="images\showdatabase.png" alt="Show Database" class ="center-image" width="650" height="400"><br><br></div></li>
         <li><i>Query</i> berikutnya, jika ingin menggunakan database yang sudah ada, bisa menggunakan : <br>
-        <code>use siswa;</code><br>
+        <code><mark>USE siswa;</mark></code><br>
         <code>use siswa</code> digunakan karena saya ingin menggunakan database siswa seperti pada gambar berikut ini :<br><br>
         <div class="text-center"><p text-center><b><i>Query</i> untuk menggunakan database yang sudah dibuat sebelumnya</b></p>
           <img src="images\usedatabase.png" alt="Use Database" class ="center-image" width="650" height="500"><br><br></div>
         Tapi jika ingin buat database baru, dengan <i>query</i> berikut ini : <br>
-        <code>create database guru;</code><br>
+        <code><mark>CREATE DATABASE guru;</mark></code><br>
         <code>create database guru</code> untuk membuat database baru dengan nama <b>guru</b>. Jika ingin nama <i>database</i> lain, tinggal diganti nama guru, sesuai keinginan.<br><br>
         <div class="text-center"><p text-center><b><i>Query</i> untuk membuat database baru</b></p>
           <img src="images\createdatabase.png" alt="Create Database" class ="center-image" width="600" height="150"><br><br></div>
@@ -168,15 +168,48 @@
             <img src="images\desaintable.png" alt="Desain Tabel" class ="center-image" width="650" height="350"><br><br></div>
           <i>query</i>nya 
           menjadi seperti ini : <br><br>
-          <code>CREATE TABLE gaji_guru (
+          <code><mark>CREATE TABLE gaji_guru (
             id INT(10) AUTO_INCREMENT PRIMARY KEY,
             nama_lengkap VARCHAR(100) NOT NULL,
             tempat_lahir VARCHAR(100) NOT NULL,
-            tanggal_lahir DATE,
-            alamat VARCHAR(255),
-            no_handphone VARCHAR(100),
-            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)</code>
+            tanggal_lahir DATE NOT NULL,
+            alamat VARCHAR(255) NOT NULL,
+            no_handphone VARCHAR(100) NOT NULL,
+            tanggal_dibuat TIMESTAMP DEFAULT CURRENT_TIMESTAMP);</mark></code><br><br>
+            Kemudian hasilnya di MySQL seperti ini : <br><br>
+            <div class="text-center"><p text-center><b>Create Tabel gaji_guru</b></p>
+              <img src="images\createtable.png" alt="Create Table" class ="center-image" width="650" height="200"><br><br></div>
+            Setelah berhasil membuat tabel gaji_guru, tampilan struktur di MySQL seperti ini, dapat dilihat di <i>localhost</i>.<br><br>
+            <div class="text-center"><p text-center><b>Struktur Tabel gaji_guru di <i>localhost</i></b></p>
+              <img src="images\createtableberhasil.png" alt="Create Table" class ="center-image" width="600" height="200"><br><br></div>
+            Sedikit penjelasan dari <i>query</i> di atas :<br>
+            <b>INT(10)</b> adalah menunjukkan tipe data Integer dengan panjang 10.<br>
+            <b>VARCHAR(100)</b> menunjukkan tipe data Varchar atau String dengan panjang 100, ada juga 255 untuk alamat.<br>
+            <b>AUTO_INCREMENT</b> artinya akan membuat urutan secara otomatis. Misalnya pertama 1 berikutnya akan otomatis 2 dan seterusnya.<br>
+            <b>NOT NULL</b> artinya <i>field</i> data tidak boleh kosong, pada saat memasukkan data ke <i>field</i> yang sudah diset NOT NULL.<br>
+            <b>TIMESTAMP</b> artinya data yang menunjukkan tanggal sampai ke jam dan detik.<br>
+            <b>DEFAULT CURRENT_TIMESTAMP</b> artinya secara otomatis akan memasukkan data tanggal, jam dan detik saat data dimasukkan.<br><br>
         </li>
+        <li><i>Query</i> berikutnya adalah memasukkan data ke dalam tabel yang sudah dibuat, karena sudah membuat tabel gaji_guru. Berarti data yang akan dimasukkan 
+        adalah data gaji guru. Desainnya seperti ini :<br><br>
+        <div class="text-center"><p text-center><b>Struktur Tabel gaji_guru di <i>localhost</i></b></p>
+        <img src="images\desaininserttable.png" alt="Insert Table" class ="center-image" width="600" height="130"><br><br></div>
+        Untuk <i>field</i> <b>id</b> dan <b>tanggal_dibuat</b> saya kosongkan karena akan otomatis terisi nilainya. id otomatis terisi karena menggunakan AUTO_INCREMENT
+        sedangkan tanggal_dibuat akan otomatis terisi karena DEFAULT CURRENT_TIMESTAMP. 
+        <i>query</i>nya 
+        seperti ini : <br><br>
+        <code><mark>INSERT INTO gaji_guru (
+          nama_lengkap, tempat_lahir, tanggal_lahir, alamat, no_handphone)
+          VALUES
+          ('Indra Sudirman', 'Tangerang', '1984-08-05', 'Serpong Utara', '089636002345');</mark></code><br><br>
+          Kemudian hasilnya di MySQL seperti ini : <br><br>
+          <div class="text-center"><p text-center><b>Insert Into gaji_guru</b></p>
+          <img src="images\insertintotable.png" alt="Insert Into Table" class ="center-image" width="650" height="150"><br><br></div>
+          Setelah berhasil memasukkan data ke  tabel gaji_guru, tampilan datanya di MySQL seperti ini : (di <i>localhost</i>).<br><br>
+          <div class="text-center"><p text-center><b>Tampilan data tabel gaji_guru di <i>localhost</i></b></p>
+          <img src="images\insertintotabledilocalhost.png" alt="Data in Table" class ="center-image" width="600" height="100"><br><br></div>
+        Bisa dilihat <b>id</b> dan <b>tanggal_dibuat</b> sudah otomatis.</li> <br>
+        <li><i>Query</i> berikutnya adalah mengupdate (merubah) data yang sudah dimasukkan pada tabel <b>gaji_guru</b> tadi.</li>
       </ol>
       
       <br><br>       
