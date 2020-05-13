@@ -124,7 +124,8 @@
 
 <div class="container card text-justify">
   <div class="card-body">
-    <div id="date">	<time datetime="2020-05-10 00:50:00"><strong>Posted:</strong> Mei 10, 2020</time><br><br></div>
+    <div id="date">	<time datetime="2020-05-10 00:50:00"><strong>Posted:</strong> Mei 10, 2020</time></div>
+    <div id="date">	<time datetime="2020-05-13 00:50:00"><strong>Updated:</strong> Mei 13, 2020</time><br><br></div>
     <div class="container">
       <blockquote class="blockquote text-center">
         <p class="h4">Query-query standar pada MySQL</p>
@@ -209,10 +210,51 @@
           <div class="text-center"><p text-center><b>Tampilan data tabel gaji_guru di <i>localhost</i></b></p>
           <img src="images\insertintotabledilocalhost.png" alt="Data in Table" class ="center-image" width="600" height="100"><br><br></div>
         Bisa dilihat <b>id</b> dan <b>tanggal_dibuat</b> sudah otomatis.</li> <br>
-        <li><i>Query</i> berikutnya adalah mengupdate (merubah) data yang sudah dimasukkan pada tabel <b>gaji_guru</b> tadi.</li>
-      </ol>
+        <li><i>Query</i> berikutnya adalah menampilkan (read) data yang sudah dimasukkan pada tabel <b>gaji_guru</b> tadi. Jadi
+        hasil yang ditampilkan seperti ini :<br><br>
+        <div class="text-center"><p text-center><b>menampilkan (read) data tabel gaji_guru</b></p>
+        <img src="images\selecttable.png" alt="Select Table" class ="center-image" width="600" height="150"><br><br></div>
+        <i>Query</i>nya seperti :<br><br>
+        <code><mark>SELECT * FROM gaji_guru;</mark></code><br><br>
+        Jangan lupa untuk menjalankan <i>query</i> <code><mark>use guru;</mark></code> dulu sebelumnya, seperti pada contoh gambar di atas. Artinya kita menggunakan database guru untuk ditampilkan.
+        </li><br>
+        <li><i>Query</i> berikutnya adalah mengupdate (merubah) data yang sudah dimasukkan pada tabel <b>gaji_guru</b> tadi. Data yang akan dirubah digambarkan Sebagai
+        berikut :<br><br>
+        <div class="text-center"><p text-center><b>mengupdate (update) data tabel gaji_guru</b></p>
+        <img src="images\updatetable.png" alt="Update Table" class ="center-image" width="600" height="150"><br><br></div>
+        Jadi data yang akan diupdate adalah <i>field</i> <b>alamat</b> dari <b>Serpong Utara</b> menjadi <b>Tangerang Selatan</b>. <i>Query</i>nya seperti ini : <br><br>
+        <code><mark>UPDATE gaji_guru SET alamat = 'Tangerang Selatan' WHERE id = 1;</mark></code><br><br>
+        Setelah dijalankan <i>query</i>nya menjadi :
+        <div class="text-center"><p text-center><b>mengupdate (update) data tabel gaji_guru di MySQL</b></p>
+        <img src="images\updatetablemysql.png" alt="Update Table" class ="center-image" width="550" height="200"><br><br></div>
+        Oh iya, rumus query update MySQL seperti ini, sudah dijelaskan di website <a href="https://www.w3schools.com/sql/sql_update.asp" target="_blank">w3schools</a>
+        rumusnya seperti ini : <br><br>
+        <code><mark>UPDATE table_name
+          SET column1 = value1, column2 = value2, ...
+          WHERE condition;</mark></code><br><br>
+          column1 = field1, dan seterusnya. Hasil di <i>localhost</i> setelah diupdate seperti ini: <br><br>
+          <div class="text-center"><p text-center><b>Tampilan setelah update tabel gaji_guru di localhost</b></p>
+          <img src="images\updatetablelocalhost.png" alt="Update Table localhost" class ="center-image" width="650" height="100"><br><br></div>
+        <i>Field</i> alamat yang sebelumnya Serpong Utara sudah berubah menjadi Tangerang Selatan.
+      </li><br>
+      <li><i>Query</i> berikutnya adalah menghapus data di table gaji_guru. Oh iya, <i>query</i> untuk hapus itu sangat mudah sekali. Seperti ini <i>query</i>nya : <br><br>
+      <code><mark>DELETE FROM gaji_guru WHERE id = 1;</mark></code><br><br>
+    Hasil di MySQL seperti ini : <br><br>
+    <div class="text-center"><p text-center><b>Delete data di tabel gaji_guru</b></p>
+    <img src="images\deletetable.png" alt="Delete Table localhost" class ="center-image" width="550" height="70"><br><br></div>
+    Tentu saja, di <i>localhost</i> akan kosong, karena saya hanya punya 1 <i>record</i><br><br>
+    <div class="text-center"><p text-center><b>Hasil Delete data di tabel gaji_guru di <i>localhost</i></b></p>
+    <img src="images\deletetablelocalhost.png" alt="Delete Table localhost" class ="center-image" width="550" height="70"><br><br></div>    
+  </li>
+      </ol>      
+      <br><br>  
+    Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+    Referensi : <br><br>
+    <a href="https://www.w3schools.com/sql/default.asp" target="_blank">https://www.w3schools.com/sql/default.asp</a><br>
+    <a href="https://dev.mysql.com/doc/refman/8.0/en/datetime.html" target="_blank">https://dev.mysql.com/doc/refman/8.0/en/datetime.html</a><br>
+    <a href="https://www.mysqltutorial.org/basic-mysql-tutorial-aspx/understanding-mysql-timestamp/" target="_blank">https://www.mysqltutorial.org/basic-mysql-tutorial-aspx/understanding-mysql-timestamp/</a><br>
+    <a href="https://stackoverflow.com/questions/4897002/mysql-current-timestamp-on-create-and-on-update" target="_blank">https://stackoverflow.com/questions/4897002/mysql-current-timestamp-on-create-and-on-update</a>
       
-      <br><br>       
       
         
 
