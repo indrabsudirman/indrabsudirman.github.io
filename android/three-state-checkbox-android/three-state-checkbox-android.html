@@ -72,6 +72,9 @@
         background-color: rgb(228, 228, 228);
 
       }
+      code { 
+        color: #000000;
+      }
       
      
       
@@ -100,9 +103,9 @@
             <li class="nav-item">
               <a class="nav-link" href="..\..\java\java.html">Java </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\android\android.html">Android</a>
-            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="..\..\android\android.html">Android</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="..\..\ubuntu\ubuntu.html">Ubuntu</a>
             </li>
@@ -112,7 +115,7 @@
             <li class="nav-item">
               <a class="nav-link" href="..\..\google-apps\google-apps.html">Google Apps</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="..\git.html">Git</a>
             </li>
             
@@ -124,47 +127,38 @@
 
 <div class="container card text-justify">
   <div class="card-body">
-    <div id="date">	<time datetime="2020-05-1 00:50:00"><strong>Posted:</strong> Mei 1, 2020</time><br><br></div>
+    <div id="date">	<time datetime="2021-06-11 00:50:00"><strong>Posted:</strong> Juni 11, 2021</time><br><br></div>
     <div class="container">
       <blockquote class="blockquote text-center">
-        <p class="h4">Menampilkan <i>code</i>/kodingan di blog/website dengan Github</p>
+        <p class="h4">Membuat Three State Checkbox Android dengan Library <i>Tri-State-Checkbox</i> sesuai dengan Material.io  <i>Code Java</i></p>
         <footer class="blockquote-footer">IndraSudirman <cite title="Source Title"></cite></footer>
       </blockquote>
-      Terkadang kalau ketemu website/blog buat pada saat cari referensi <i>code</i>/kodingan saya lebih suka sama yang menampilkan/menempelkan <i>code</i>
-      yang di-<i>embedded</i> dari Github. Cara itu lebih memudahkan orang lain yang membaca dan kadang kalau males ketik <i>code</i> bisa langsung <i>copy-paste</i>
-      dengan mudah trus diedit beberapa variabel trus run dah. Jika berhasil atau dapat pencerahan saya biasanya baru diketik ulang, sambil 
-      membaca lagi <i>code</i> secara perlahan.<br><br>
-      Berdasarkan dari pengalaman itu, saya jadi tertarik buat cari tahu caranya menempelkan <i>code</i> dari Github ke blog. Saya pikir caranya bakal ribet 
-      dan sedikit susah. Tapi ternyata sangat mudah sekali. Saya menemukan <a href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda" target="_blank">tulisan ini</a>
-      dan sang penulis menjelaskan dengan mudah dipahami buat pemula seperti saya &#128512; <br><br>
-      Langsung saja ke topicnya, caranya adalah : <br><br>
-      <ol type="1">
-        <li>Masuk ke website gist.github.com dari link ini <a href="https://gist.github.com/" target="_blank">gist.github.com</a>.<br></li>
-        <li>Setelah itu, akan tampil tampilan seperti gambar di bawah ini .<br><br>
-          <img src="images\gist-github.png" alt="Gist Github" class ="center-image" width="800" height="400"></li><br><br>
-          <b>Gambar no 1</b> diisi dengan Deskripsi <i>code</i>nya. Kalau Deskripsi bebas ya, sesuai dengan apa yang akan dibuat di gist-githubnya 
-          Contohnya, karena saya akan menempelkan <i>code</i> tentang Dropdown nama siswa di Google Form. Berarti di deskripsi saya buat
-          <b>Code untuk membuat Dropdown Nama Responses di Google Form</b>.<br>
-          <b>Gambar no 2</b> diisi nama file <i>code</i>nya, beserta <i>ekstensi</i>nya. Contoh saya buat <code>Code.gs</code>.<br>
-          <b>Gambar no 3</b> diisi seluruh <i>code</i>nya, yang akan di embedded ke blog/website.<br>
-          <b>Gambar no 4</b> Ada tombol save, sekaligus menjadikan code yang sudah dibuat di gist-github menjadi public atau bisa diakses oleh siapa saja di internet.<br><br>
-        </li>
-        <li>
-          Hasilnya punya saya akan seperti ini :<br><br>
-          <div class="text-center"><p text-center><b>Code untuk membuat Dropdown Nama Responses di Google Form</b></p></div>
-          <img src="images\tampilan-gist-github.png" alt="Gist Github With Code" class ="center-image" width="900" height="700"><br><br>
-          Kemudian tinggal klik tombol pada gambar 5, untuk <i>copy</i> kemudian nanti <i>paste</i> di blog/website. Kerennya gist-github ini,
-          yang di<i>copy</i> hanya script <code>JavaScript</code> jadi pendek sekali. Trus jika di<i>paste</i> diblog/website sudah menyesuaikan
-          dengan frame sebelumnya. Jadi dah fit dah tampilannya.<br><br>
-        </li>
-        <li>
-          Contohnya, saya <i>paste embedded</i> gist github seperti ini : <br><br>
-          <img src="images\paste-disini.png" alt="Embedded Gist Github in Code" class ="center-image" width="900" height="50"><br><br>
-          Hasilnya seperti pada note saya yang <a href="..\..\google-apps\dropdownmenu-googleform\dropdownmenu-googleform.html" target="_blank">disini</a> di nomor 6 ya.</li> <br><br>
-    </ol>
-    Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+      <i>Checkbox</i> salah satu dari komponen <i>Android</i> yang sering digunakan dalam membangun Aplikasi <i>Android</i>. Jika melihat petunjuk di <a href="https://material.io/components/checkboxes#usage"target="_blank">Material io</a>
+      <i>Checkbox</i> terdiri 3 <i>state</i> yaitu : <i>check</i>, <i>uncheck</i> dan <i>indeterminate</i>. Seperti gambar di bawah ini  <br><br>
+      <div class="text-center"><p text-center><b><i>Checkbox</i> terdiri 3 <i>state</i> yaitu : <i>checked</i>, <i>unchecked</i> dan <i>indeterminate</i>.</b></p>
+      <img src="images\checkbox-material-io.png" alt="Checkbox Material Io" class ="center-image" width="550" height="300"><br><br></div>
+      Sebelum mengetahui ada <i>Class JFormattedTextField</i>, saya menggunakan <i>JTextField</i> untuk mengambil <i>input</i> dari <i>user</i> tapi karena rasa ketidakpuasan saya, 😊
+      dan <i>JTextField</i> tidak bisa menformat untuk bilangan uang.
+      Akhirnya saya mencari cara lain, sampai akhirnya saya menemukan pembahasan mengenai <i>JFormattedTextField</i> di <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">stackoverflow.</a> 
+      Kemudian saya memcari di Official <i>Documentation</i>nya di <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">sini.</a>
+      Saya baru ternyata ada <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ini, tanpa harus mengakali dari <i>JTextField</i> seperti yang pertama saya temukan di link tadi.<br><br>
+      Konstraktor <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ternyata dapat menerima <i>argument</i> <i>Format</i> atau <a href="https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getInstance-java.util.Locale-" target="_blank"><i>NumberFormat</i></a>. <i>Class NumberFormat</i>
+      sebelumnya saya sudah mengetahui untuk mensetting bilangan uang berdasarkan lokal daerah. Jika ingin mendeklarasikan menjadi lokal Rupiah menjadi
+      seperti ini :<br><br> <b><code>JFormattedTextField inputNilaiUang = new JFormattedTextField(NumberFormat.getNumberInstance(new Locale("ID")));</code></b> <br><br>
+      <i>ClassNumberFormat</i> ini sebelumnya sudah saya ketahui dari <a href="images\senior.png" target="_blank">Senior</a> yang memberikan petunjuknya untuk kasus uang Rupiah.
+      Langsung saja ke <i>code</i>/kodingannya, <b>karena apa yang saya mau ingat ketika belajar tentang <i>JFormattedTextField</i> sudah saya tulis semua.</b> 
+      Jadi seperti ini kodingannya : <br><br>
+      <script src="https://gist.github.com/indrabsudirman/a3f91c8945d69641f852e4c1f55f7eff.js"></script>
+      
+      <br><br>       
+      Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+      Terima kasih banyak untuk petunjuknya, <a href="https://www.facebook.com/yohanes/" target="_blank">om Yohanes.</a><br><br>
 
-    Referensi : <a href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda" target="_blank">https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda</a>
+      Referensi : <br>
+      <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html</a><br>
+      <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield</a><br><br>
+      
+
         
 
 
@@ -191,6 +185,7 @@
 <!-- Footer -->
 
 </div>
+
 
 
     <!-- Optional JavaScript -->
