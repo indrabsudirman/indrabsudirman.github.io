@@ -151,28 +151,29 @@
       Buat saya yang masih pemula di <i>Java</i> merasa susah banget, lihat sample apps-nya dengan <i>Kotlin</i>. 
       <br><br>
       Alhamdulillah ada senior yang baik, yang selalu bantu saya saat saya <i>stuck/mentog</i> di programming. <a href="https://www.facebook.com/yohanes" target="_blank">Om Yohanes</a> kasih contoh saya gimana cara pakai
-      <i>Library Tri-State-Checkbox</i> dengan Java. Seperti ini petunjuknya : <br><br>
+      <a href="https://github.com/sephiroth74/Tri-State-Checkbox" target="_blank"><i>library</i> <i>Tri-State-Checkbox</i></a> dengan Java. Seperti ini petunjuknya : <br><br>
       <br><br>
-      Sebelum mengetahui ada <i>Class JFormattedTextField</i>, saya menggunakan <i>JTextField</i> untuk mengambil <i>input</i> dari <i>user</i> tapi karena rasa ketidakpuasan saya, 😊
-      dan <i>JTextField</i> tidak bisa menformat untuk bilangan uang.
-      Akhirnya saya mencari cara lain, sampai akhirnya saya menemukan pembahasan mengenai <i>JFormattedTextField</i> di <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">stackoverflow.</a> 
-      Kemudian saya memcari di Official <i>Documentation</i>nya di <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">sini.</a>
-      Saya baru ternyata ada <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ini, tanpa harus mengakali dari <i>JTextField</i> seperti yang pertama saya temukan di link tadi.<br><br>
-      Konstraktor <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ternyata dapat menerima <i>argument</i> <i>Format</i> atau <a href="https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getInstance-java.util.Locale-" target="_blank"><i>NumberFormat</i></a>. <i>Class NumberFormat</i>
-      sebelumnya saya sudah mengetahui untuk mensetting bilangan uang berdasarkan lokal daerah. Jika ingin mendeklarasikan menjadi lokal Rupiah menjadi
-      seperti ini :<br><br> <b><code>JFormattedTextField inputNilaiUang = new JFormattedTextField(NumberFormat.getNumberInstance(new Locale("ID")));</code></b> <br><br>
-      <i>ClassNumberFormat</i> ini sebelumnya sudah saya ketahui dari <a href="images\senior.png" target="_blank">Senior</a> yang memberikan petunjuknya untuk kasus uang Rupiah.
-      Langsung saja ke <i>code</i>/kodingannya, <b>karena apa yang saya mau ingat ketika belajar tentang <i>JFormattedTextField</i> sudah saya tulis semua.</b> 
-      Jadi seperti ini kodingannya : <br><br>
-      <script src="https://gist.github.com/indrabsudirman/a3f91c8945d69641f852e4c1f55f7eff.js"></script>
+      <script src="https://gist.github.com/indrabsudirman/e724c51643f12fe7252ccce242ad8b38.js"></script>
       
-      <br><br>       
-      Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+      <br><br>  
+      Sedikit penjelasannya, bagi yang sudah mengerti tidak perlu lagi baca penjelasan saya &#128512; <br><br>
+      <ol type="1">
+        <li>Menambahkan <code>setOnCheckedChangeListener</code> pada baris code 25 - 44. Jangan lupa sebelumnya diinisialisasi dulu seperti baris 16 dan 24.</li>
+        <li>Setelah itu, lakukan <code>Override</code> pada <i>method</i> <code>onContentChanged()</code> seperti baris 47 - 85.</li>
+        <li>Untuk yang <code>Override</code> bisa dilakukan jika pakai <i>Android Studio</i> dengan cara <code>Alt</code> + <code>Insert</code> hasilnya akan tampil seperti ini : <br><br>
+          <div class="text-center"><p text-center><b><code>Override</code> <i>method</i> di <i>Android Studio</i>.</b></p>
+            <img src="images\override-method-android-studio.png" alt="Override Method Android Studio" class ="center-image" width="170" height="210"><br><br></div>
+            atau bisa juga dengan <code>Ctrl</code> + <code>O</code> seperti pada gambar di atas. Setelah itu cari/ketik <i>method</i> yang akan di<code>Override</code> seperti gambar dibawah ini :<br><br>
+            <div class="text-center"><p text-center><b>cari <i>method</i> yang akan di<code>override</code> di <i>Android Studio</i>.</b></p>
+              <img src="images\select-method-to-override.png" alt="Select Method To Override In Android Studio" class ="center-image" width="350" height="510"><br><br></div>
+            misalnya <i>method</i> <code>onContentChanged</code> seperti gambar di atas.
+        </li>
+      </ol> 
+      Demikian note saya, Semoga berhasil bagi yang mencoba &#128522;.<br><br>
       Terima kasih banyak untuk petunjuknya, <a href="https://www.facebook.com/yohanes/" target="_blank">om Yohanes.</a><br><br>
 
       Referensi : <br>
-      <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html</a><br>
-      <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield</a><br><br>
+      <a href="https://github.com/sephiroth74/Tri-State-Checkbox" target="_blank"><i>library</i> <i>Tri-State-Checkbox</i></a><br>
       
 
         
