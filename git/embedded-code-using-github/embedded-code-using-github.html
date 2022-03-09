@@ -25,184 +25,266 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link rel="icon" href="..\..\image\gl_bw_new.png" type="image/gif" sizes="20x25">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS Offline-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="icon" href="..\..\image\gl_bw_new.png" type="image/gif" sizes="20x25">
 
-    <style type="text/css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+  <!-- Bootstrap CSS Offline-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style type="text/css">
     .jumbotron {
 
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom:0px;
-      }
-      .navbar {
+      margin-bottom: 0px;
+    }
+
+    .navbar {
 
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        }
-        .card {
-          flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-        }
+    .card {
+      flex-direction: column;
+
+    }
 
 
-        
+
     .display-4 {
-      text-align:center;
+      text-align: center;
 
-      }
-      .lead {
-        text-align:center;
-      }
-      .gray{
-        background-color: rgb(228, 228, 228);
+    }
 
-      }
-      
-     
-      
+    .lead {
+      text-align: center;
+    }
+
+    .gray {
+      background-color: rgb(228, 228, 228);
+
+    }
   </style>
-    
 
-    <title>This is just notes for me</title>
-  </head>
-  <body>
-    
-    <div class="container jumbotron">
-        
-                 
-  <h1 class="display-4">Indra Sudirman</h1>
-  <p class="lead">This is just notes for me.</p>
-  
-</div>
-<div>
-    <nav class="container navbar navbar-expand-lg navbar-light gray">
-        
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+
+  <title>This is just notes for me</title>
+</head>
+
+<body>
+
+  <div class="container jumbotron">
+
+
+    <h1 class="display-4">Indra Sudirman</h1>
+    <p class="lead">This is just notes for me.</p>
+
+  </div>
+  <div>
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-secondary main-navigation">
+      <div class="container">
+
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="overlay d-flex d-lg-none"></div>
+
+        <div class="order-lg-2 bg-secondary d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+          <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="..\..\index.html">Home</a>
+              <a class="nav-link px-3 px-lg-2 active" aria-current="page" href="..\..\index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\java\java.html">Java </a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Bahasa Pemrograman</a>
+              <div class="dropdown-menu">
+                <a href="..\..\java\java.html" class="dropdown-item">Java</a>
+                <a href="#" class="dropdown-item">Kotlin</a>
+                <a href="#" class="dropdown-item">Go (Golang)</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\android\android.html">Android</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Backend</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Gofiber (Go)</a>
+                <a href="#" class="dropdown-item">Spring Boot</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\ubuntu\ubuntu.html">Ubuntu</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mobile Development</a>
+              <div class="dropdown-menu">
+                <a href="..\..\android\android.html" class="dropdown-item">Android</a>
+                <a href="#" class="dropdown-item">React Native</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\mysql\mysql.html">MySQL</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Linux</a>
+              <div class="dropdown-menu">
+                <a href="..\..\ubuntu\ubuntu.html" class="dropdown-item">Ubuntu</a>
+                <a href="#" class="dropdown-item">Linux Mint</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="..\..\google-apps\google-apps.html">Google Apps</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Database</a>
+              <div class="dropdown-menu">
+                <a href="..\..\mysql\mysql.html" class="dropdown-item">MySQL</a>
+                <a href="#" class="dropdown-item">SQLite</a>
+                <a href="#" class="dropdown-item">PostgreSQL</a>
+              </div>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="..\git.html">Git</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Google Apps</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Google Docs</a>
+                <a href="#" class="dropdown-item">Google Sheet</a>
+                <a href="..\..\google-apps\google-apps.html" class="dropdown-item">Google Form</a>
+              </div>
             </li>
-            
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Git</a>
+              <div class="dropdown-menu">
+                <a href="..\..\git\git.html" class="dropdown-item">Github</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About me</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Curriculum Vitae</a>
+                <a href="#" class="dropdown-item">Portfolio</a>
+              </div>
+            </li>
           </ul>
         </div>
-      </nav>
-</div>
+      </div>
+    </nav>
+  </div>
 
 
-<div class="container card text-justify">
-  <div class="card-body">
-    <div id="date">	<time datetime="2020-05-1 00:50:00"><strong>Posted:</strong> Mei 1, 2020</time><br><br></div>
-    <div class="container">
-      <blockquote class="blockquote text-center">
-        <p class="h4">Menampilkan <i>code</i>/kodingan di blog/website dengan Github</p>
-        <footer class="blockquote-footer">IndraSudirman <cite title="Source Title"></cite></footer>
-      </blockquote>
-      Terkadang kalau ketemu website/blog buat pada saat cari referensi <i>code</i>/kodingan saya lebih suka sama yang menampilkan/menempelkan <i>code</i>
-      yang di-<i>embedded</i> dari Github. Cara itu lebih memudahkan orang lain yang membaca dan kadang kalau males ketik <i>code</i> bisa langsung <i>copy-paste</i>
-      dengan mudah trus diedit beberapa variabel trus run dah. Jika berhasil atau dapat pencerahan saya biasanya baru diketik ulang, sambil 
-      membaca lagi <i>code</i> secara perlahan.<br><br>
-      Berdasarkan dari pengalaman itu, saya jadi tertarik buat cari tahu caranya menempelkan <i>code</i> dari Github ke blog. Saya pikir caranya bakal ribet 
-      dan sedikit susah. Tapi ternyata sangat mudah sekali. Saya menemukan <a href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda" target="_blank">tulisan ini</a>
-      dan sang penulis menjelaskan dengan mudah dipahami buat pemula seperti saya &#128512; <br><br>
-      Langsung saja ke topicnya, caranya adalah : <br><br>
-      <ol type="1">
-        <li>Masuk ke website gist.github.com dari link ini <a href="https://gist.github.com/" target="_blank">gist.github.com</a>.<br></li>
-        <li>Setelah itu, akan tampil tampilan seperti gambar di bawah ini .<br><br>
-          <img src="images\gist-github.png" alt="Gist Github" class ="center-image" width="800" height="400"></li><br><br>
-          <b>Gambar no 1</b> diisi dengan Deskripsi <i>code</i>nya. Kalau Deskripsi bebas ya, sesuai dengan apa yang akan dibuat di gist-githubnya 
-          Contohnya, karena saya akan menempelkan <i>code</i> tentang Dropdown nama siswa di Google Form. Berarti di deskripsi saya buat
+  <div class="container card text-justify">
+    <div class="card-body">
+      <div id="date"> <time datetime="2020-05-1 00:50:00"><strong>Posted:</strong> Mei 1, 2020</time><br><br></div>
+      <div class="container">
+        <blockquote class="blockquote text-center">
+          <p class="h4">Menampilkan <i>code</i>/kodingan di blog/website dengan Github</p>
+          <footer class="blockquote-footer">IndraSudirman <cite title="Source Title"></cite></footer>
+        </blockquote>
+        Terkadang kalau ketemu website/blog buat pada saat cari referensi <i>code</i>/kodingan saya lebih suka sama yang
+        menampilkan/menempelkan <i>code</i>
+        yang di-<i>embedded</i> dari Github. Cara itu lebih memudahkan orang lain yang membaca dan kadang kalau males
+        ketik <i>code</i> bisa langsung <i>copy-paste</i>
+        dengan mudah trus diedit beberapa variabel trus run dah. Jika berhasil atau dapat pencerahan saya biasanya baru
+        diketik ulang, sambil
+        membaca lagi <i>code</i> secara perlahan.<br><br>
+        Berdasarkan dari pengalaman itu, saya jadi tertarik buat cari tahu caranya menempelkan <i>code</i> dari Github
+        ke blog. Saya pikir caranya bakal ribet
+        dan sedikit susah. Tapi ternyata sangat mudah sekali. Saya menemukan <a
+          href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda" target="_blank">tulisan ini</a>
+        dan sang penulis menjelaskan dengan mudah dipahami buat pemula seperti saya &#128512; <br><br>
+        Langsung saja ke topicnya, caranya adalah : <br><br>
+        <ol type="1">
+          <li>Masuk ke website gist.github.com dari link ini <a href="https://gist.github.com/"
+              target="_blank">gist.github.com</a>.<br></li>
+          <li>Setelah itu, akan tampil tampilan seperti gambar di bawah ini .<br><br>
+            <img src="images\gist-github.png" alt="Gist Github" class="center-image" width="800" height="400">
+          </li><br><br>
+          <b>Gambar no 1</b> diisi dengan Deskripsi <i>code</i>nya. Kalau Deskripsi bebas ya, sesuai dengan apa yang
+          akan dibuat di gist-githubnya
+          Contohnya, karena saya akan menempelkan <i>code</i> tentang Dropdown nama siswa di Google Form. Berarti di
+          deskripsi saya buat
           <b>Code untuk membuat Dropdown Nama Responses di Google Form</b>.<br>
-          <b>Gambar no 2</b> diisi nama file <i>code</i>nya, beserta <i>ekstensi</i>nya. Contoh saya buat <code>Code.gs</code>.<br>
+          <b>Gambar no 2</b> diisi nama file <i>code</i>nya, beserta <i>ekstensi</i>nya. Contoh saya buat
+          <code>Code.gs</code>.<br>
           <b>Gambar no 3</b> diisi seluruh <i>code</i>nya, yang akan di embedded ke blog/website.<br>
-          <b>Gambar no 4</b> Ada tombol save, sekaligus menjadikan code yang sudah dibuat di gist-github menjadi public atau bisa diakses oleh siapa saja di internet.<br><br>
-        </li>
-        <li>
-          Hasilnya punya saya akan seperti ini :<br><br>
-          <div class="text-center"><p text-center><b>Code untuk membuat Dropdown Nama Responses di Google Form</b></p></div>
-          <img src="images\tampilan-gist-github.png" alt="Gist Github With Code" class ="center-image" width="900" height="700"><br><br>
-          Kemudian tinggal klik tombol pada gambar 5, untuk <i>copy</i> kemudian nanti <i>paste</i> di blog/website. Kerennya gist-github ini,
-          yang di<i>copy</i> hanya script <code>JavaScript</code> jadi pendek sekali. Trus jika di<i>paste</i> diblog/website sudah menyesuaikan
-          dengan frame sebelumnya. Jadi dah fit dah tampilannya.<br><br>
-        </li>
-        <li>
-          Contohnya, saya <i>paste embedded</i> gist github seperti ini : <br><br>
-          <img src="images\paste-disini.png" alt="Embedded Gist Github in Code" class ="center-image" width="900" height="50"><br><br>
-          Hasilnya seperti pada note saya yang <a href="..\..\google-apps\dropdownmenu-googleform\dropdownmenu-googleform.html" target="_blank">disini</a> di nomor 6 ya.</li> <br><br>
-    </ol>
-    Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
+          <b>Gambar no 4</b> Ada tombol save, sekaligus menjadikan code yang sudah dibuat di gist-github menjadi public
+          atau bisa diakses oleh siapa saja di internet.<br><br>
+          </li>
+          <li>
+            Hasilnya punya saya akan seperti ini :<br><br>
+            <div class="text-center">
+              <p text-center><b>Code untuk membuat Dropdown Nama Responses di Google Form</b></p>
+            </div>
+            <img src="images\tampilan-gist-github.png" alt="Gist Github With Code" class="center-image" width="900"
+              height="700"><br><br>
+            Kemudian tinggal klik tombol pada gambar 5, untuk <i>copy</i> kemudian nanti <i>paste</i> di blog/website.
+            Kerennya gist-github ini,
+            yang di<i>copy</i> hanya script <code>JavaScript</code> jadi pendek sekali. Trus jika di<i>paste</i>
+            diblog/website sudah menyesuaikan
+            dengan frame sebelumnya. Jadi dah fit dah tampilannya.<br><br>
+          </li>
+          <li>
+            Contohnya, saya <i>paste embedded</i> gist github seperti ini : <br><br>
+            <img src="images\paste-disini.png" alt="Embedded Gist Github in Code" class="center-image" width="900"
+              height="50"><br><br>
+            Hasilnya seperti pada note saya yang <a
+              href="..\..\google-apps\dropdownmenu-googleform\dropdownmenu-googleform.html" target="_blank">disini</a>
+            di nomor 6 ya.
+          </li> <br><br>
+        </ol>
+        Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
 
-    Referensi : <a href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda" target="_blank">https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda</a>
-        
+        Referensi : <a href="https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda"
+          target="_blank">https://medium.com/@aryamurali/embed-code-in-medium-e95b839cfdda</a>
 
 
-    
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020
+        <a href="https://indrabsudirman.github.io/"> IndraSudirman</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
   </div>
 
 
-  </div>
-</div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS OFFLINE -->
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiped-events.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 
-<div class="container">
-  <!-- Footer -->
-<footer class="page-footer font-small blue">
+</body>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 
-    <a href="https://indrabsudirman.github.io/"> IndraSudirman</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
-
-</div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS OFFLINE -->
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
 </html>
