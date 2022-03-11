@@ -21,14 +21,14 @@
   max-width: 1000px;
   min-height: 1000px;
   margin: 30px;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: "Poppins", sans-serif;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 95px rgba(0, 0, 0, 1);
 }
 .container_cv .left_side {
   position: relative;
   background: #023769;
-  padding: 40px;
+  /* padding: 10px; */
 }
 
 .profile_text {
@@ -42,24 +42,24 @@
 
 .profile_text .image_profile {
   position: relative;
-  width: 200px;
-  height: 200px;
+  /* width: 200px;
+  height: 200px; */
   border-radius: 50%;
   overflow: hidden;
 }
 
-.profile_text .image_profile img {
+/* .profile_text .image_profile img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 .profile_text h2 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.8em;
   margin-top: 20px;
   text-transform: capitalize;
   text-align: center;
@@ -69,6 +69,8 @@
 
 .contact_info {
   padding-top: 40px;
+  padding-right: 45px;
+  padding-bottom: 40px;
 }
 
 .title {
@@ -77,13 +79,155 @@
   /* font-weight: 600; */
   font-size: 1.5em;
   text-align: left;
-  letter-spacing: 1px;
   margin-bottom: 20px;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
-/* .container_cv .right_side {
+.contact_info ul {
+  position: relative;
+}
+
+.contact_info ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact_info ul li .icon {
+  display: inline-block;
+  width: 20px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contact_info ul li span {
+  color: #ffffff;
+}
+
+.contact_info.education li {
+  margin-bottom: 15px;
+}
+
+.contact_info.education h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contact_info.education h4:nth-child(2) {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.contact_info.education h4 {
+  color: #aaa4a4;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.contact_info.language .percent {
+  background: #081921;
+  position: relative;
+  width: 100%;
+  height: 6px;
+  display: block;
+  margin-top: 5px;
+}
+
+.contact_info.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.container_cv .right_side {
   position: relative;
   background: #fff;
-  padding: 40px;
-} */
+  padding: 25px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0px;
+}
+
+.motto {
+  text-align: center;
+}
+
+.title2 {
+  text-transform: capitalize;
+  font-size: 1.6em;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.title3 {
+  text-transform: capitalize;
+  font-size: 1em;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 1em;
+}
+
+.about .box .year_company {
+  min-width: 160px;
+}
+
+.about .box .year_company h5:nth-child(1) {
+  font-weight: 100;
+}
+
+.about .box .year_company h5 {
+  font-weight: 600;
+}
+
+.year_company h5 {
+  font-size: 1em;
+}
+
+.about .box .text h4 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.skills .box h4 {
+  font-size: 1em;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #c2c2c2;
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
