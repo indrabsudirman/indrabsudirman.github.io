@@ -1,0 +1,32 @@
+.item1 {
+  grid-area: header;
+  color: white;
+  min-height: 300px;
+  align-items: center;
+  text-align: center;
+}
+.item2 {
+  grid-area: menu;
+  background-color: white;
+  color: black;
+  min-height: 1000px;
+}
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu menu menu menu menu menu";
+  /* gap: 10px; */
+  background-color: #023769;
+  box-shadow: 0 55px 100px rgba(0, 0, 0, 1);
+  /* padding: 10px; */
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
