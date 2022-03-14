@@ -1,11 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
 .item1 {
   grid-area: header;
   color: white;
-  min-height: 300px;
+  min-height: 150px;
   align-items: center;
   text-align: center;
 }
+
 .item2 {
+  grid-area: subheader1;
+  color: rgb(255, 255, 255);
+  min-height: 20px;
+  margin-left: 15px;
+}
+.item3 {
+  grid-area: subheader2;
+  color: rgb(255, 255, 255);
+  min-height: 20px;
+  margin-left: 15px;
+}
+.item4 {
+  grid-area: subheader3;
+  color: rgb(255, 255, 255);
+  min-height: 20px;
+  margin-left: 15px;
+}
+.item5 {
+  grid-area: subheader4;
+  color: rgb(255, 255, 255);
+  min-height: 20px;
+  margin-left: 15px;
+}
+
+.item6 {
   grid-area: menu;
   background-color: white;
   color: black;
@@ -16,17 +44,20 @@
   margin-top: 20px;
   display: grid;
   grid-template-areas:
-    "header header header header header header"
-    "menu menu menu menu menu menu";
-  /* gap: 10px; */
+    "header header header header"
+    "subheader1 subheader2 subheader3 subheader4"
+    "menu menu menu menu";
   background-color: #023769;
+  font-family: "Poppins", sans-serif;
   box-shadow: 0 55px 100px rgba(0, 0, 0, 1);
-  /* padding: 10px; */
 }
 
 .grid-container > div {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 20px;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
 }
