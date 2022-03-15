@@ -38,6 +38,7 @@
   background-color: white;
   color: black;
   min-height: 1000px;
+  padding-left: 10px;
 }
 
 .grid-container {
@@ -53,11 +54,11 @@
 }
 
 .grid-container > div {
-  padding: 20px;
+  padding: 30px;
 }
 
 .navbar-nav.navbar-center {
   position: absolute;
-  left: 50%;
+  right: 10%;
   transform: translatex(-50%);
 }
