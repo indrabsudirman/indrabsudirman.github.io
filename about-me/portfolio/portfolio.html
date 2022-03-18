@@ -178,111 +178,183 @@
     <div class="d-md-flex justify-content-md-end">
       <button class="btn btn-outline-success btn-lg" type="button">Download Portfolio</button>
     </div>
-    <!-- <div id="date">	<time datetime="2020-05-3 00:50:00"><strong>Posted:</strong> Mei 3, 2020</time><br><br></div>
-    <div class="container">
-      <blockquote class="blockquote text-center">
-        <p class="h4">Membuat Titik Pemisah Untuk Angka Uang di <i>Java</i> dengan <i>JFormattedTextField</i></p>
-        <footer class="blockquote-footer">IndraSudirman <cite title="Source Title"></cite></footer>
-      </blockquote>
-      Pada saat belajar Bahasa Pemrograman <i>Java</i>, banyak sekali yang membuat saya penasaran cara buat suatu fitur dengan <i>Java</i>.
-      Salah satunya bagaimana caranya membuat titik pemisah untuk angka uang yang dimasukkan oleh <i>user</i>/pengguna aplikasi
-      seperti ini <b>100.000</b> karena saya termasuk orang yang yakin <b>aplikasi itu harus dibuat dengan sangat mudah digunakan oleh <i>user</i>/pengguna,
-      tidak menyusahkan saat dipakai</b>. Salah satunya ya seperti ini, membuat titik pemisah otomatis ketika <i>user</i>/pengguna memasukkan angka untuk uang,
-      karena jika tidak dipisah <i>user</i>/pengguna akan cenderung memasukkan angka kurang atau kebanyakan, khususnya untuk angka 0 (nol).<br><br>
-      <div class="text-center"><p text-center><b>Hasil membuat titik pemisah untuk uang</b></p>
-      <img src="images\hasilnya.png" alt="Titik Pemisah Uang" class ="center-image" width="400" height="300"><br><br></div>
-      Sebelum mengetahui ada <i>Class JFormattedTextField</i>, saya menggunakan <i>JTextField</i> untuk mengambil <i>input</i> dari <i>user</i> tapi karena rasa ketidakpuasan saya, 😊
-      dan <i>JTextField</i> tidak bisa menformat untuk bilangan uang.
-      Akhirnya saya mencari cara lain, sampai akhirnya saya menemukan pembahasan mengenai <i>JFormattedTextField</i> di <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">stackoverflow.</a> 
-      Kemudian saya memcari di Official <i>Documentation</i>nya di <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">sini.</a>
-      Saya baru ternyata ada <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ini, tanpa harus mengakali dari <i>JTextField</i> seperti yang pertama saya temukan di link tadi.<br><br>
-      Konstraktor <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html#formattedtextfieldapi" target="_blank"><i>Class JFormattedTextField</i></a> ternyata dapat menerima <i>argument</i> <i>Format</i> atau <a href="https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getInstance-java.util.Locale-" target="_blank"><i>NumberFormat</i></a>. <i>Class NumberFormat</i>
-      sebelumnya saya sudah mengetahui untuk mensetting bilangan uang berdasarkan lokal daerah. Jika ingin mendeklarasikan menjadi lokal Rupiah menjadi
-      seperti ini :<br><br> <b><code>JFormattedTextField inputNilaiUang = new JFormattedTextField(NumberFormat.getNumberInstance(new Locale("ID")));</code></b> <br><br>
-      <i>ClassNumberFormat</i> ini sebelumnya sudah saya ketahui dari <a href="images\senior.png" target="_blank">Senior</a> yang memberikan petunjuknya untuk kasus uang Rupiah.
-      Langsung saja ke <i>code</i>/kodingannya, <b>karena apa yang saya mau ingat ketika belajar tentang <i>JFormattedTextField</i> sudah saya tulis semua.</b> 
-      Jadi seperti ini kodingannya : <br><br>
-      <script src="https://gist.github.com/indrabsudirman/a3f91c8945d69641f852e4c1f55f7eff.js"></script>
-      
-      <br><br>       
-      Semoga berhasil bagi yang mencoba &#128522;, demikian note saya.<br><br>
-      Terima kasih banyak untuk petunjuknya, <a href="https://www.facebook.com/yohanes/" target="_blank">om Yohanes.</a><br><br>
-
-      Referensi : <br>
-      <a href="https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html" target="_blank">https://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html</a><br>
-      <a href="https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield" target="_blank">https://stackoverflow.com/questions/27293036/from-jtextfield-to-jformattedtextfield</a><br><br> -->
-      
-
-<!-- <p>This grid layout contains six columns and three rows:</p> -->
 
 <div class="grid-container">
   <div class="item1">
     <h5>Portfolio</h5>
     <h2>Indra Bayu Sudirman</h2>
   </div>
-
-  <!-- <div class="item2">
-    <p><a href="https://indrabsudirman.github.io/index.html" style="color: white" target="_blank">indrabsudirman.github.io</a></p>
-  </div>
-  <div class="item3">
-    <p><a href="https://github.com/indrabsudirman" style="color: white" target="_blank">Github</a></p>
-  </div>
-  <div class="item4">
-    <p><a href="mailto:indra.indrabayu@gmail.com" style="color: white" target="_blank">indra.indrabayu@gmail.com</a></p>
-  </div>
-  <div class="item5">
-    <p><a href="https://wa.me/6289636002345" style="color: white" target="_blank">089636002345</a></p>
-  </div>
-  <div class="item6">
-    <h5>Detail portfolio here</h5>
-    <p >“I always motivate my self, to always learn, learn new technology, new programming languages. 
-      In Programming language everything need learn, read documentation, understand the algorithm, 
-      try and try again.”
-    </p>
-  </div> -->
-  <!-- <div class="item3">Main</div>  
-  <div class="item4">Right</div>
-  <div class="item5">Footer</div> -->
-  <!-- <nav class="navbar navbar-expand-lg" style="position: relative;">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav" >
-        <a class="nav-item nav-link active" style="color: #ffffff" href="#home">Mobile <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" style="color: #ffffff" href="#"><span class="icon"><i class="fa-solid fa-location-dot"></i></span>Backend</a>
-        <a class="nav-item nav-link" style="color: #ffffff" href="#">Desktop</a>
-      </div>
-    </div>
-  </nav> -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home" style="color: white;" >Mobile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#">Backend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#">Desktop</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
   <div class="item6" >
+    <ul>
+      <li>
+        <a aria-current="page" href="#home">Mobile</a>
+      </li>
+      <li>
+        <a href="#backend">Backend</a>
+      </li>
+      <li>
+        <a href="#desktop">Desktop</a>
+      </li>
+    </ul>
     <h3> <a href="#home" style="color: #000000">Mobile</a></h3>
-    <h5> Belajar Bahasa Inggris <a href="https://play.google.com/store/apps/developer?id=Indra+Sudirman" target="_blank">Available at Play Store</a></h5>
-    <p >Aplikasi Belajar Bahasa Inggris rilis
-    </p>
-    <div >
-      <a href="..\..\public\image\belajarbahasainggris.png" target="_blank">
-        <img src="..\..\public\image\belajarbahasainggris.png" alt="Belajar Bahasa Inggris" style="width:25%">
-      <a href="..\..\public\image\belajarbahasainggris.png" target="_blank">
-        <img src="..\..\public\image\belajarbahasainggris.png" alt="Belajar Bahasa Inggris" style="width:25%">
-      <a href="..\..\public\image\belajarbahasainggris.png" target="_blank">
-        <img src="..\..\public\image\belajarbahasainggris.png" alt="Belajar Bahasa Inggris" style="width:25%">
-      </a>
-    </div>
+    <ol type="1">
+      <li>
+        <h5>Bahasa Inggris</h5>
+        <ul>
+          <li>
+            Written in Java
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=id.indrasudirman.belajarbahasainggris" target="_blank">Available at Google Play Store</a>
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/BelajarBahasaInggris" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <img src="../../public/image/belajar-bahasa-inggris-0.png" alt="Belajar Bahasa Inggris" width="300" height="536"> 
+        <img src="../../public/image/belajar-bahasa-inggris-1.png" alt="Belajar Bahasa Inggris" width="300" height="536"> 
+        <img src="../../public/image/belajar-bahasa-inggris-2.png" alt="Belajar Bahasa Inggris" width="300" height="536"> 
+        <p><br>Aplikasi Belajar Bahasa Inggris memberikan alternatif lain untuk belajar bahasa inggris.<br><br></p>
+      </li>
+      <li>
+        <h5>Setoran Murojaah</h5>
+        <ul>
+          <li>
+            Written in Java
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=id.indrasudirman.setoranmurojaahapp" target="_blank">Available at Google Play Store</a>
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/SetoranMurojaahApp" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <img src="../../public/image/setoran-murojaah-1.png" alt="Setoran Murojaah" width="300" height="536"> 
+        <img src="../../public/image/setoran-murojaah-2.png" alt="Setoran Murojaah" width="300" height="536"> 
+        <img src="../../public/image/setoran-murojaah-3.png" alt="Setoran Murojaah" width="300" height="536"> 
+        <p><br>Aplikasi Setoran Murojaah membantu siswa pendidikan agama Islam dalam menyimpan murojaah hariannya.<br><br></p>
+      </li>
+      <li>
+        <h5>News App</h5>
+        <ul>
+          <li>
+            Written in Kotlin
+          </li>
+          <li>
+            MVVM Architecture
+          </li>
+          <li>
+            API : <a href="https://newsapi.org" target="_blank">https://newsapi.org</a>
+          </li>
+          <li>
+            Retrofit
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/MyMVVMNewApp" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <img src="../../public/image/news-app-1.png" alt="News App" width="300" height="586"> 
+        <img src="../../public/image/news-app-2.png" alt="News App" width="300" height="586"> 
+        <img src="../../public/image/news-app-3.png" alt="News App" width="300" height="586"> 
+        <p><br>Aplikasi Berita yang diambil dari <a href="https://newsapi.org" target="_blank">https://newsapi.org</a><br><br></p>
+      </li>
+      <li>
+        <h5>Eat Your Lunch App</h5>
+        <ul>
+          <li>
+            Written in React Native
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/EatYourLunchApp" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <img src="../../public/image/eat-your-lunch-1.png" alt="Eat Your Lunch" width="300" height="596"> 
+        <img src="../../public/image/eat-your-lunch-2.png" alt="Eat Your Lunch" width="300" height="596"> 
+        <img src="../../public/image/eat-your-lunch-3.png" alt="Eat Your Lunch" width="300" height="596"> 
+        <p><br>UI Aplikasi untuk order makanan dengan React Native.<br><br></p>
+      </li>
+    </ol>
+    <!-- Backend -->
+    <ul>
+      <li>
+        <a href="#home">Mobile</a>
+      </li>
+      <li>
+        <a href="#backend">Backend</a>
+      </li>
+      <li>
+        <a href="#desktop">Desktop</a>
+      </li>
+    </ul>
+    <h3> <a href="#backend" style="color: #000000" id="backend">Backend</a></h3>
+    <ol type="1">
+      <li>
+        <h5>Learn backend Go & Gofiber</h5>
+        <ul>
+          <li>
+            Written in Go
+          </li>
+          <li>
+            Using GORM & PostgreSQL 
+          </li>
+          <li>
+            Http method : Post, Put, Update Delete 
+          </li>
+          <li>
+            Middleware 
+          </li>
+          <li>
+            JSON Web Token 
+          </li>
+          <li>
+            Available at Heroku <a href="https://learn-gofiber-gorm.herokuapp.com/" target="_blank">https://learn-gofiber-gorm.herokuapp.com/</a>
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/go-fiber" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <img src="../../public/image/gofiber-1.png" alt="Go gofiber" width="678" height="536"> <br><br>
+        <img src="../../public/image/gofiber-2.png" alt="Go gofiber" width="678" height="536"> 
+        <p><br>Rest API backend dengan Go & Gofiber dan GORM database PostgreSQL.<br><br></p>
+      </li>
+    </ol>
+    <!-- Desktop -->
+    <ul>
+      <li>
+        <a href="#home">Mobile</a>
+      </li>
+      <li>
+        <a href="#backend">Backend</a>
+      </li>
+      <li>
+        <a href="#desktop">Desktop</a>
+      </li>
+    </ul>
+    <h3> <a href="#desktop" style="color: #000000" id="desktop">Desktop</a></h3>
+    <ol type="1">
+      <li>
+        <h5>TPA Azka Ainiya Sistem Administrasi Siswa</h5>
+        <ul>
+          <li>
+            Written in Java using Netbeans
+          </li>
+          <li>
+            Database MySQL 
+          </li>
+          <li>
+            <a href="https://github.com/indrabsudirman/TPAAzkaAiniya" target="_blank">Code in Github</a>
+          </li>
+        </ul><br>
+        <iframe width="660" height="415" src="https://www.youtube.com/embed/U3i9xpPHS04" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><br>Aplikasi Sistem Informasi siswa TPA Azka Ainiya dengan Java & Netbeans.<br><br></p>
+      </li>
+    </ol>
+
+      
+    
+    
+
     
   </div>
   
