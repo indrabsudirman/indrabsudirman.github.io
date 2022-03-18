@@ -41,6 +41,10 @@
   padding-left: 10px;
 }
 
+.item6 h3 {
+  padding-left: 25px;
+}
+
 .grid-container {
   margin-top: 20px;
   display: grid;
